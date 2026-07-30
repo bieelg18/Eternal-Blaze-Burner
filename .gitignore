@@ -26,3 +26,5 @@ Thumbs.db
 
 # Run folder
 run/
+
+libs/*.jar
