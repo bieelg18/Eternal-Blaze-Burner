@@ -1,0 +1,16 @@
+Eternal Blaze Burner
+Version 1.0.0
+
+Initial Release
+
+Added:
+- Eternal Blaze Core.
+- Permanent Blaze Burner upgrade system.
+- Coal Infusion mechanic (20 Coal Blocks).
+- Permanent Heated state.
+- Blaze Cake compatibility (Superheated support).
+- NBT save/load support.
+- Client-server synchronization.
+- Jade integration with infusion progress.
+- Crafting recipe.
+- English and Brazilian Portuguese translations.

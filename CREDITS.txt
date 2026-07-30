@@ -1,0 +1,10 @@
+Eternal Blaze Burner
+
+Created by:
+- bieelg18
+
+Special Thanks:
+- The Create Team for creating the amazing Create mod.
+- The Jade Team for the tooltip API.
+- The Minecraft Forge Team.
+- The Minecraft modding community for tutorials and documentation.

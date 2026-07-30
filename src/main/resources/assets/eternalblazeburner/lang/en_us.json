@@ -1,0 +1,9 @@
+{
+  "block.eternalblazeburner.eternal_blaze_core": "Eternal Blaze Core",
+  "config.jade.plugin_eternalblazeburner.eternal_blaze_provider": "Eternal Blaze Burner",
+  "jade.eternalblazeburner.title": "Eternal Blaze Burner",
+  "jade.eternalblazeburner.fuel": "Fuel Infusion: ",
+  "jade.eternalblazeburner.coal_blocks": " Coal Blocks",
+  "jade.eternalblazeburner.permanently_heated": "Permanently Heated",
+  "item.eternalblazeburner.eternal_blaze_core": "Eternal Blaze Core"
+}
