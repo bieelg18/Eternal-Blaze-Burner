@@ -2,6 +2,7 @@ package com.bieelg18.eternalblazeburner;
 
 
 import com.bieelg18.eternalblazeburner.registry.ModBlocks;
+import com.bieelg18.eternalblazeburner.registry.ModCreativeTabs;
 import com.bieelg18.eternalblazeburner.registry.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -24,10 +25,12 @@ public class EternalBlazeBurner {
 
 
         ModItems.register(eventBus);
-
+        ModCreativeTabs.register(eventBus);
 
 
     }
+
+
 
 
 }

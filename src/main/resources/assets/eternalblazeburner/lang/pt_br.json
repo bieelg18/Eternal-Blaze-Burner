@@ -5,5 +5,6 @@
   "jade.eternalblazeburner.fuel": "Carvão: ",
   "jade.eternalblazeburner.coal_blocks": " Blocos de Carvão",
   "jade.eternalblazeburner.permanently_heated": "Eternamente Aquecido",
-  "item.eternalblazeburner.eternal_blaze_core": "Núcleo da Chama Eterna"
+  "item.eternalblazeburner.eternal_blaze_core": "Núcleo da Chama Eterna",
+  "creativetab.eternalblazeburner": "Eternal Blaze Burner"
 }
