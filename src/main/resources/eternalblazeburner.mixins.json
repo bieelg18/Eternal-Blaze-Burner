@@ -5,7 +5,8 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "eternalblazeburner.refmap.json",
   "mixins": [
-    "BlazeBurnerBlockEntityMixin"
+    "BlazeBurnerBlockEntityMixin",
+    "BlockMixin"
   ],
   "client": [],
   "injectors": {
