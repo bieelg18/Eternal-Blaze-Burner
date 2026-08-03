@@ -1,11 +1,7 @@
-Eternal Blaze Burner v1.0.1
+Eternal Blaze Burner v1.0.2
 
-Added
-- Added a dedicated Creative Mode tab for the mod.
+Improvements
 
-Changed
-- Improved the Eternal Blaze Core texture to better match Minecraft and Create's aesthetic.
+- Eternal Blaze Burners now preserve their Eternal state after being broken and placed again.
 
-Fixed
-- Fixed the Eternal Blaze Core crafting recipe.
-- Fixed JEI integration. The recipe now appears correctly in Just Enough Items (JEI).
+- Coal Block progress is also preserved when breaking and replacing an Eternal Blaze Burner.
