@@ -142,6 +142,7 @@ dependencies {
     implementation fg.deobf("local:create-1.20.1:6.0.8")
     runtimeOnly fg.deobf("snowee.jade:Jade-1.20.1-Forge:11.13.2")
     compileOnly fg.deobf("snowee.jade:Jade-1.20.1-Forge:11.13.2")
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime

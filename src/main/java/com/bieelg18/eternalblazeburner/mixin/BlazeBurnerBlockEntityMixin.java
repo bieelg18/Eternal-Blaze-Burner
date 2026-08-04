@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
 import org.spongepowered.asm.mixin.Shadow;
 
-@Mixin(BlazeBurnerBlockEntity.class)
+@Mixin(value = BlazeBurnerBlockEntity.class, remap = false)
 public class BlazeBurnerBlockEntityMixin implements IEternalBlazeBurner {
 
     @Shadow

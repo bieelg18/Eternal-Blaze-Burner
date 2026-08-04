@@ -27,7 +27,7 @@ public class BlockMixin {
     private static int coalProgress = 0;
 
     @Inject(
-            method = "playerDestroy",
+            method = "playerDestroy(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/world/item/ItemStack;)V",
             at = @At("HEAD")
     )
     private void eternal$playerDestroy(
