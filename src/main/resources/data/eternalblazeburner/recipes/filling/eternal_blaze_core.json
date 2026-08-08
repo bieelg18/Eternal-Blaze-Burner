@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "eternalblazeburner:incomplete_blaze_core"
+    },
+    {
+      "fluid": "eternalblazeburner:molten_blaze_cake",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "eternalblazeburner:eternal_blaze_core"
+    }
+  ]
+}

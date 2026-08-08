@@ -1,16 +1,20 @@
 package com.bieelg18.eternalblazeburner;
 
 
-import com.bieelg18.eternalblazeburner.registry.ModBlocks;
-import com.bieelg18.eternalblazeburner.registry.ModCreativeTabs;
-import com.bieelg18.eternalblazeburner.registry.ModItems;
+import com.bieelg18.eternalblazeburner.registry.*;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.minecraftforge.client.ConfigScreenHandler;
+import net.minecraftforge.fml.ModLoadingContext;
+import com.bieelg18.eternalblazeburner.config.EternalBlazeBurnerConfigScreen;
+import net.minecraftforge.fml.config.ModConfig;
+import com.bieelg18.eternalblazeburner.config.Config;
+
+
 
 @Mod(EternalBlazeBurner.MOD_ID)
 public class EternalBlazeBurner {
@@ -26,6 +30,21 @@ public class EternalBlazeBurner {
 
         ModItems.register(eventBus);
         ModCreativeTabs.register(eventBus);
+        ModBlocks.register(eventBus);
+        ModFluids.register(eventBus);
+
+
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        ModLoadingContext.get().registerExtensionPoint(
+                ConfigScreenHandler.ConfigScreenFactory.class,
+                () -> new ConfigScreenHandler.ConfigScreenFactory(
+                        (minecraft, screen) -> new EternalBlazeBurnerConfigScreen(screen)
+                )
+        );
+
+
 
 
     }

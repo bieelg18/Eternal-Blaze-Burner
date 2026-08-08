@@ -1,51 +1,71 @@
 # Eternal Blaze Burner
 
-A lightweight addon for Create that introduces a permanent upgrade for the Blaze Burner.
+Eternal Blaze Burner is an addon for Create that introduces a complete industrial progression to permanently upgrade Blaze Burners.
 
-Once infused with the Eternal Blaze Core and fueled with 20 Coal Blocks, a Blaze Burner will remain permanently Heated without consuming any more fuel.
+Instead of a simple crafting recipe, players must manufacture advanced components through Create's machinery, including Mechanical Presses, Mechanical Spouts, Mixing, and Sequenced Assembly, before forging the Eternal Blaze Burner.
 
 ## Features
 
-- 🔥 Adds the Eternal Blaze Core.
-- 🔥 Permanently upgrades Blaze Burners.
-- ⛏️ Fuel infusion system (20 Coal Blocks required).
-- 🍰 Fully compatible with Blaze Cakes (Superheated still works normally).
-- 💾 Progress is saved with the world.
+- 🔥 Permanently ignite Blaze Burners in both Heated and Superheated states.
+- ⚙️ Complete industrial progression integrated with Create.
+- 🧱 New manufacturing components:
+    - Compacted Blaze Cake
+    - Molten Blaze Cake
+    - Incomplete Eternal Blaze Core
+    - Eternal Blaze Core
+    - Incomplete Eternal Flame Catalyst
+    - Eternal Superheated Flame Catalyst
+    - Eternal Flame Catalyst
+- 🌋 New Molten Blaze Cake fluid.
+- ❄️ Cooling mechanic for the Eternal Superheated Flame Catalyst.
+- ⚙️ Configurable Coal Block requirement.
 - 📖 Jade integration with real-time infusion progress.
 - 🌍 English and Brazilian Portuguese translations.
 
-## Crafting Recipe
+## Progression
 
 ```
-B P B
-R C R
-S O S
+Blaze Cake
+      ↓
+Compacted Blaze Cake
+      ↓
+Molten Blaze Cake
+      ↓
+Incomplete Eternal Blaze Core
+      ↓
+Mechanical Spout
+      ↓
+Eternal Blaze Core
+      ↓
+Eternal Blaze Burner
+      ↓
+Incomplete Eternal Flame Catalyst
+      ↓
+Eternal Superheated Flame Catalyst
+      ↓
+Cooling Process
+      ↓
+Eternal Flame Catalyst
+      ↓
+Eternal Blaze Burner Superheated
 ```
 
-| Symbol | Item |
-|--------|------|
-| B | Blaze Cake |
-| P | Precision Mechanism |
-| R | Blaze Rod |
-| C | Blaze Burner |
-| S | Brass Sheet |
-| O | Obsidian |
+## Configuration
 
-## How it works
+The amount of Coal Blocks required to permanently ignite a Blaze Burner can be configured.
 
-1. Craft the **Eternal Blaze Core**.
-2. Right-click a Blaze Burner with the Core.
-3. Feed the Blaze Burner **20 Coal Blocks**.
-4. Once the infusion is complete, the Blaze Burner becomes **Permanently Heated**.
+Default value:
 
-Blaze Cakes continue to function normally, allowing the burner to become **Superheated** temporarily.
+```
+20 Coal Blocks
+```
 
 ## Compatibility
 
 - Minecraft **1.20.1**
 - Forge **47.4.10**
 - Create **6.0.8**
-- Jade *(optional, for tooltip support)*
+- Jade *(optional, tooltip support)*
 
 ## License
 

@@ -1,10 +1,25 @@
 {
   "Item.eternalblazeburner.eternal_blaze_core": "Núcleo da Chama Eterna",
+  "item.eternalblazeburner.scorched_brass_sheet": "Chapa de Latão Chamuscado",
+  "item.eternalblazeburner.eternal_flame_catalyst": "Catalisador da Chama Eterna",
+  "item.eternalblazeburner.incomplete_eternal_flame_catalyst": "Catalisador da Chama Eterna Incompleto",
+  "item.eternalblazeburner.incomplete_blaze_core": "Núcleo de Blaze Incompleto",
+  "item.eternalblazeburner.eternal_superheated_flame_catalyst": "Catalisador da Chama Eterna Superaquecido",
+  "item.eternalblazeburner.scorched_precision_mechanism": "Mecanismo de Precisão Chamuscado",
   "config.jade.plugin_eternalblazeburner.eternal_blaze_provider": "Queimador Blaze Eterno",
   "jade.eternalblazeburner.title": "Eternal Blaze Burner",
   "jade.eternalblazeburner.fuel": "Carvão: ",
   "jade.eternalblazeburner.coal_blocks": " Blocos de Carvão",
   "jade.eternalblazeburner.permanently_heated": "Eternamente Aquecido",
   "item.eternalblazeburner.eternal_blaze_core": "Núcleo da Chama Eterna",
-  "creativetab.eternalblazeburner": "Eternal Blaze Burner"
+  "creativetab.eternalblazeburner": "Eternal Blaze Burner",
+  "item.eternalblazeburner.molten_blaze_cake_bucket": "Balde de Bolo de Blaze Derretido",
+  "item.eternalblazeburner.compacted_blaze_cake": "Bolo de Blaze Compactado",
+  "fluid_type.eternalblazeburner.molten_blaze_cake": "Bolo de Blaze Derretido",
+  "block.eternalblazeburner.molten_blaze_cake": "Bolo de Blaze Derretido",
+  "message.eternalblazeburner.superheated": "Está muito quente! Aguarde esfriar antes de pegar.",
+  "message.eternalblazeburner.catalyst_stabilized": "A temperatura estabilizou. O Eternal Flame Catalyst agora pode ser manuseado.",
+  "jade.eternalblazeburner.permanently_superheated": "Eternamente Superaquecido",
+  "config.eternalblazeburner.title": "Eternal Blaze Burner - Configurações",
+  "config.eternalblazeburner.coal_blocks": "Blocos de carvão necessários"
 }

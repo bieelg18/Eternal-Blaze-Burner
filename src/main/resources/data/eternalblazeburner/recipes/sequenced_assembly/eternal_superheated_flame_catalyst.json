@@ -1,0 +1,65 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "eternalblazeburner:eternal_blaze_core"
+  },
+  "transitionalItem": {
+    "item": "eternalblazeburner:incomplete_eternal_flame_catalyst"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "eternalblazeburner:incomplete_eternal_flame_catalyst"
+        },
+        {
+          "item": "eternalblazeburner:scorched_brass_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "eternalblazeburner:incomplete_eternal_flame_catalyst"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "eternalblazeburner:incomplete_eternal_flame_catalyst"
+        },
+        {
+          "item": "eternalblazeburner:scorched_precision_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "item": "eternalblazeburner:incomplete_eternal_flame_catalyst"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "eternalblazeburner:incomplete_eternal_flame_catalyst"
+        },
+        {
+          "item": "minecraft:nether_star"
+        }
+      ],
+      "results": [
+        {
+          "item": "eternalblazeburner:incomplete_eternal_flame_catalyst"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "eternalblazeburner:eternal_superheated_flame_catalyst"
+    }
+  ]
+}

@@ -22,8 +22,18 @@ public class ModCreativeTabs {
                             .icon(() -> new ItemStack(ModItems.ETERNAL_BLAZE_CORE.get()))
                             .displayItems((parameters, output) -> {
                                 output.accept(ModItems.ETERNAL_BLAZE_CORE.get());
+                                output.accept(ModItems.SCORCHED_BRASS_SHEET.get());
+                                output.accept(ModItems.ETERNAL_FLAME_CATALYST.get());
+                                output.accept(ModItems.SCORCHED_PRECISION_MECHANISM.get());
+                                output.accept(ModItems.MOLTEN_BLAZE_CAKE_BUCKET.get());
+                                output.accept(ModItems.ETERNAL_SUPERHEATED_FLAME_CATALYST.get());
+                                output.accept(ModItems.INCOMPLETE_ETERNAL_FLAME_CATALYST.get());
+                                output.accept(ModItems.COMPACTED_BLAZE_CAKE.get());
+                                output.accept(ModItems.INCOMPLETE_BLAZE_CORE.get());
                             })
                             .build());
+
+
 
     public static void register(net.minecraftforge.eventbus.api.IEventBus eventBus){
         CREATIVE_MODE_TABS.register(eventBus);

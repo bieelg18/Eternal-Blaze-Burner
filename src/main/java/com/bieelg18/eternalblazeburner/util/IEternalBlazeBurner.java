@@ -10,4 +10,8 @@ public interface IEternalBlazeBurner {
 
     void setCoalProgress(int progress);
 
+    boolean isSuperheated();
+
+    void setSuperheated(boolean superheated);
+
 }

@@ -6,5 +6,20 @@
   "jade.eternalblazeburner.coal_blocks": " Coal Blocks",
   "jade.eternalblazeburner.permanently_heated": "Permanently Heated",
   "item.eternalblazeburner.eternal_blaze_core": "Eternal Blaze Core",
-  "creativetab.eternalblazeburner": "Eternal Blaze Burner"
+  "creativetab.eternalblazeburner": "Eternal Blaze Burner",
+  "item.eternalblazeburner.scorched_brass_sheet": "Scorched Brass Sheet",
+  "item.eternalblazeburner.eternal_flame_catalyst": "Eternal Flame Catalyst",
+  "item.eternalblazeburner.incomplete_eternal_flame_catalyst": "Incomplete Eternal Flame Catalyst",
+  "item.eternalblazeburner.incomplete_blaze_core": "Incomplete Blaze Core",
+  "item.eternalblazeburner.eternal_superheated_flame_catalyst": "Superheated Eternal Flame Catalyst",
+  "item.eternalblazeburner.scorched_precision_mechanism": "Scorched Precision Mecanism",
+  "item.eternalblazeburner.molten_blaze_cake_bucket": "Molten Blaze Cake Bucket",
+  "item.eternalblazeburner.compacted_blaze_cake": "Compacted Blaze Cake",
+  "fluid_type.eternalblazeburner.molten_blaze_cake": "Molten Blaze Cake",
+  "block.eternalblazeburner.molten_blaze_cake": "Molten Blaze Cake",
+  "message.eternalblazeburner.superheated": "It's still superheated! Wait for it to cool down before picking it up.",
+  "message.eternalblazeburner.catalyst_stabilized": "The temperature has stabilized. The Eternal Flame Catalyst can now be handled.",
+  "jade.eternalblazeburner.permanently_superheated": "Permanently Superheated",
+  "config.eternalblazeburner.title": "Eternal Blaze Burner - Settings",
+  "config.eternalblazeburner.coal_blocks": "Required Coal Blocks"
 }

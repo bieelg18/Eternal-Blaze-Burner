@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "minecraft:lava",
+      "amount": 1000
+    },
+    {
+      "item": "eternalblazeburner:compacted_blaze_cake"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "eternalblazeburner:molten_blaze_cake",
+      "amount": 1000
+    }
+  ],
+  "requiredHeat": "superheated",
+  "processingTime": 200
+}

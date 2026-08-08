@@ -1,7 +1,39 @@
-Eternal Blaze Burner v1.0.2
+Eternal Blaze Burner v1.1.0
+
+New Features
+
+- Completely redesigned progression for forging the Eternal Blaze Burner.
+
+- Added support for permanently igniting Blaze Burners in the Superheated state using the Eternal Flame Catalyst.
+
+- Added Compacted Blaze Cake.
+
+- Added Molten Blaze Cake fluid.
+
+- Added Incomplete Eternal Blaze Core.
+
+- Added Incomplete Eternal Flame Catalyst.
+
+- Added Eternal Superheated Flame Catalyst.
+
+- Added a cooling process for the Eternal Superheated Flame Catalyst before it can be safely handled.
+
+- Added a Mechanical Spout filling process to complete the Eternal Blaze Core.
+
+- Added a configuration screen.
+
+- Added a configurable option to change the number of Coal Blocks required to ignite an Eternal Blaze Burner.
+
+Recipe Changes
+
+- Reworked the Eternal Blaze Core crafting process into a multi-step industrial manufacturing chain.
+
+- Reworked the Eternal Flame Catalyst crafting process.
+
+- Added new Create processing recipes using Mechanical Presses, Mechanical Spouts, Mixing, Filling, and Sequenced Assembly.
 
 Improvements
 
-- Eternal Blaze Burners now preserve their Eternal state after being broken and placed again.
+- Updated several item textures to better match Create's visual style.
 
-- Coal Block progress is also preserved when breaking and replacing an Eternal Blaze Burner.
+- Improved progression and overall balancing.

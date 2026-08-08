@@ -1,0 +1,28 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "create:blaze_cake"
+    },
+    {
+      "item": "create:blaze_cake"
+    },
+    {
+      "item": "create:blaze_cake"
+    },
+    {
+      "item": "create:blaze_cake"
+    },
+    {
+      "item": "create:blaze_cake"
+    },
+    {
+      "item": "create:blaze_cake"
+    }
+  ],
+  "results": [
+    {
+      "item": "eternalblazeburner:compacted_blaze_cake"
+    }
+  ]
+}

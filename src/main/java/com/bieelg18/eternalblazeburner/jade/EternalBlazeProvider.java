@@ -1,5 +1,6 @@
 package com.bieelg18.eternalblazeburner.jade;
 
+import com.bieelg18.eternalblazeburner.config.Config;
 import com.bieelg18.eternalblazeburner.util.IEternalBlazeBurner;
 import com.simibubi.create.content.processing.burner.BlazeBurnerBlockEntity;
 import net.minecraft.ChatFormatting;
@@ -38,14 +39,28 @@ public enum EternalBlazeProvider implements IBlockComponentProvider {
         // Linha em branco
         tooltip.add(Component.empty());
 
-        if (eternal.getCoalProgress() < 20) {
+        if (eternal.isSuperheated()) {
+
+            tooltip.add(
+                    Component.literal("🔥 ")
+                            .withStyle(ChatFormatting.RED)
+                            .append(
+                                    Component.translatable("jade.eternalblazeburner.permanently_superheated")
+                                            .withStyle(ChatFormatting.RED)
+                            )
+            );
+
+            return;
+        }
+
+        if (eternal.getCoalProgress() < Config.COAL_BLOCKS_REQUIRED.get()) {
 
             tooltip.add(
                     Component.translatable("jade.eternalblazeburner.fuel")
                             .withStyle(ChatFormatting.GRAY)
                             .append(
                                     Component.literal(
-                                            eternal.getCoalProgress() + "/20"
+                                            eternal.getCoalProgress() + "/" + Config.COAL_BLOCKS_REQUIRED.get()
                                     ).withStyle(ChatFormatting.GOLD)
                             )
                             .append(

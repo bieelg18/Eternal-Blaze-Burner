@@ -1,0 +1,28 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "create:brass_sheet"
+    },
+    {
+      "item": "create:brass_sheet"
+    },
+    {
+      "item": "create:precision_mechanism"
+    }
+  ],
+  "results": [
+    {
+      "item": "eternalblazeburner:incomplete_blaze_core"
+    }
+  ]
+}

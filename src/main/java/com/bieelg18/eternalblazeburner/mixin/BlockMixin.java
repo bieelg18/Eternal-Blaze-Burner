@@ -24,6 +24,9 @@ public class BlockMixin {
     private static boolean wasEternal = false;
 
     @Unique
+    private static boolean wasSuperheated = false;
+
+    @Unique
     private static int coalProgress = 0;
 
     @Inject(
@@ -41,6 +44,7 @@ public class BlockMixin {
     ) {
 
         wasEternal = false;
+        wasSuperheated = false;
         coalProgress = 0;
 
         if (!(blockEntity instanceof IEternalBlazeBurner))
@@ -52,6 +56,7 @@ public class BlockMixin {
             return;
 
         wasEternal = true;
+        wasSuperheated = eternal.isSuperheated();
         coalProgress = eternal.getCoalProgress();
     }
 
@@ -75,11 +80,13 @@ public class BlockMixin {
         CompoundTag blockEntityTag = new CompoundTag();
 
         blockEntityTag.putBoolean("EternalBlaze", true);
+        blockEntityTag.putBoolean("EternalBlazeSuperheated", wasSuperheated);
         blockEntityTag.putInt("CoalProgress", coalProgress);
 
         stack.addTagElement("BlockEntityTag", blockEntityTag);
 
         wasEternal = false;
+        wasSuperheated = false;
         coalProgress = 0;
     }
 }

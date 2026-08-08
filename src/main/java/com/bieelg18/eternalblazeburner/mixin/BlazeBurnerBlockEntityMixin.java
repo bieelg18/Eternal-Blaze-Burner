@@ -15,6 +15,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
 import org.spongepowered.asm.mixin.Shadow;
+import com.bieelg18.eternalblazeburner.config.Config;
 
 @Mixin(value = BlazeBurnerBlockEntity.class, remap = false)
 public class BlazeBurnerBlockEntityMixin implements IEternalBlazeBurner {
@@ -51,12 +52,14 @@ public class BlazeBurnerBlockEntityMixin implements IEternalBlazeBurner {
     private void eternal$write(CompoundTag tag, boolean clientPacket, CallbackInfo ci){
         tag.putBoolean("EternalBlaze", this.eternal);
         tag.putInt("CoalProgress", this.coalProgress);
+        tag.putBoolean("EternalBlazeSuperheated", this.superheated);
     }
 
     @Inject(method = "read", at = @At("TAIL"))
     private void eternal$read(CompoundTag tag, boolean clientPacket, CallbackInfo ci){
         this.eternal = tag.getBoolean("EternalBlaze");
         this.coalProgress = tag.getInt("CoalProgress");
+        this.superheated = tag.getBoolean("EternalBlazeSuperheated");
     }
 
     @Inject(
@@ -80,13 +83,13 @@ public class BlazeBurnerBlockEntityMixin implements IEternalBlazeBurner {
         if (!stack.is(Items.COAL_BLOCK))
             return;
 
-        if (eternal.getCoalProgress() >= 20){
+        if (eternal.getCoalProgress() >= Config.COAL_BLOCKS_REQUIRED.get()){
             cir.setReturnValue(false);
             return;
         }
 
         if (!simulate){
-            if (eternal.getCoalProgress() < 20){
+            if (eternal.getCoalProgress() < Config.COAL_BLOCKS_REQUIRED.get()){
                 eternal.setCoalProgress(eternal.getCoalProgress() + 1);
                 BlockEntity be = (BlockEntity) (Object) this;
                 be.setChanged();
@@ -115,17 +118,34 @@ public class BlazeBurnerBlockEntityMixin implements IEternalBlazeBurner {
             BlazeBurnerBlock.HeatLevel heat,
             CallbackInfo ci
     ) {
+
+
+
         Object obj = this;
         IEternalBlazeBurner eternal = (IEternalBlazeBurner) obj;
+
+        if (eternal.isSuperheated()) {
+
+            if (heat != BlazeBurnerBlock.HeatLevel.SEETHING) {
+                BlockEntity blockEntity = (BlockEntity) (Object) this;
+                blockEntity.getLevel().setBlockAndUpdate(
+                        blockEntity.getBlockPos(),
+                        blockEntity.getBlockState().setValue(
+                                BlazeBurnerBlock.HEAT_LEVEL,
+                                BlazeBurnerBlock.HeatLevel.SEETHING
+                        )
+                );
+            }
+            ci.cancel();
+            return;
+        }
 
         if (!eternal.isEternal())
             return;
 
-        if (eternal.getCoalProgress() < 20)
+        if (eternal.getCoalProgress() < Config.COAL_BLOCKS_REQUIRED.get())
             return;
 
-        // Se o Create tentar apagar ou esfriar o Blaze Burner,
-        // forçamos ele a permanecer Heated.
         if (heat == BlazeBurnerBlock.HeatLevel.SMOULDERING
                 || heat == BlazeBurnerBlock.HeatLevel.FADING) {
 
@@ -141,6 +161,19 @@ public class BlazeBurnerBlockEntityMixin implements IEternalBlazeBurner {
 
             ci.cancel();
         }
+    }
+
+    @Unique
+    private boolean superheated = false;
+
+    @Override
+    public boolean isSuperheated() {
+        return superheated;
+    }
+
+    @Override
+    public void setSuperheated(boolean superheated) {
+        this.superheated = superheated;
     }
 
 
